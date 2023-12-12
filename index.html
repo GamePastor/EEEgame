@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem Vindo a Central</title>
+    <title>Seu Jogo Multiplayer</title>
 </head>
 <body>
-
-
-
+    <h1 id="msg"></h1>
     <script>
-        window.location = "templates/index.html";
+        var socket = io.connect('https://gamepastor.github.io/');
+        var msg = document.getElementById('msg');
+        socket.on('connect', function() {
+            console.log('Conectado ao servidor!');
+            msg.innerText = "OII GABI";
+        });
     </script>
 </body>
 </html>
-
