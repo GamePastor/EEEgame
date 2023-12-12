@@ -1,0 +1,15 @@
+
+/* styles.css */
+#game-container {
+position: relative;
+width: 800px; /* Largura do cenário */
+height: 600px; /* Altura do cenário */
+border: 1px solid #000; /* Borda para representar o cenário */
+}
+
+.user-square {
+position: absolute;
+width: 50px; /* Largura do quadrado do usuário */
+height: 50px; /* Altura do quadrado do usuário */
+background-color: #3498db; /* Cor do quadrado do usuário */
+}
